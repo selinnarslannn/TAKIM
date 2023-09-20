@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Takim.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="TakimStoreContainer">
+    <EntitySet Name="OyuncuSet" EntityType="Takim.Store.OyuncuSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TakimSet" EntityType="Takim.Store.TakimSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UlkeSet" EntityType="Takim.Store.UlkeSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MevkiSet" EntityType="Takim.Store.MevkiSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="KullaniciSet" EntityType="Takim.Store.KullaniciSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="UlkeTakim" Association="Takim.Store.UlkeTakim">
+      <End Role="Ulke" EntitySet="UlkeSet" />
+      <End Role="Takim" EntitySet="TakimSet" />
+    </AssociationSet>
+    <AssociationSet Name="TakimOyuncu" Association="Takim.Store.TakimOyuncu">
+      <End Role="Takim" EntitySet="TakimSet" />
+      <End Role="Oyuncu" EntitySet="OyuncuSet" />
+    </AssociationSet>
+    <AssociationSet Name="MevkiOyuncu" Association="Takim.Store.MevkiOyuncu">
+      <End Role="Mevki" EntitySet="MevkiSet" />
+      <End Role="Oyuncu" EntitySet="OyuncuSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="OyuncuSet">
+    <Key>
+      <PropertyRef Name="OyuncuNo" />
+    </Key>
+    <Property Name="OyuncuNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Soyadi" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Yas" Type="int" Nullable="false" />
+    <Property Name="Mevki" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Maas" Type="decimal" Nullable="false" />
+    <Property Name="Ulke" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TakimNo" Type="int" Nullable="false" />
+    <Property Name="MevkiNo" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TakimSet">
+    <Key>
+      <PropertyRef Name="TakimNo" />
+    </Key>
+    <Property Name="TakimNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TakimAdi" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UlkeNo" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UlkeSet">
+    <Key>
+      <PropertyRef Name="UlkeNo" />
+    </Key>
+    <Property Name="UlkeNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UlkeAdi" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MevkiSet">
+    <Key>
+      <PropertyRef Name="MevkiNo" />
+    </Key>
+    <Property Name="MevkiNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MevkiAdi" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KullaniciSet">
+    <Key>
+      <PropertyRef Name="KullaniciNo" />
+    </Key>
+    <Property Name="KullaniciNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KullaniciAdi" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Sifre" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="UlkeTakim">
+    <End Role="Ulke" Type="Takim.Store.UlkeSet" Multiplicity="1" />
+    <End Role="Takim" Type="Takim.Store.TakimSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ulke">
+        <PropertyRef Name="UlkeNo" />
+      </Principal>
+      <Dependent Role="Takim">
+        <PropertyRef Name="UlkeNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TakimOyuncu">
+    <End Role="Takim" Type="Takim.Store.TakimSet" Multiplicity="1" />
+    <End Role="Oyuncu" Type="Takim.Store.OyuncuSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Takim">
+        <PropertyRef Name="TakimNo" />
+      </Principal>
+      <Dependent Role="Oyuncu">
+        <PropertyRef Name="TakimNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MevkiOyuncu">
+    <End Role="Mevki" Type="Takim.Store.MevkiSet" Multiplicity="1" />
+    <End Role="Oyuncu" Type="Takim.Store.OyuncuSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mevki">
+        <PropertyRef Name="MevkiNo" />
+      </Principal>
+      <Dependent Role="Oyuncu">
+        <PropertyRef Name="MevkiNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

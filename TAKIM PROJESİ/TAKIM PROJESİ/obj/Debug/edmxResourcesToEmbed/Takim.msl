@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TakimStoreContainer" CdmEntityContainer="TakimContainer">
+    <EntitySetMapping Name="OyuncuSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Takim.Oyuncu)">
+        <MappingFragment StoreEntitySet="OyuncuSet">
+          <ScalarProperty Name="OyuncuNo" ColumnName="OyuncuNo" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />
+          <ScalarProperty Name="Yas" ColumnName="Yas" />
+          <ScalarProperty Name="Mevki" ColumnName="Mevki" />
+          <ScalarProperty Name="Maas" ColumnName="Maas" />
+          <ScalarProperty Name="Ulke" ColumnName="Ulke" />
+          <ScalarProperty Name="TakimNo" ColumnName="TakimNo" />
+          <ScalarProperty Name="MevkiNo" ColumnName="MevkiNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TakimSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Takim.Takim)">
+        <MappingFragment StoreEntitySet="TakimSet">
+          <ScalarProperty Name="TakimNo" ColumnName="TakimNo" />
+          <ScalarProperty Name="TakimAdi" ColumnName="TakimAdi" />
+          <ScalarProperty Name="UlkeNo" ColumnName="UlkeNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UlkeSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Takim.Ulke)">
+        <MappingFragment StoreEntitySet="UlkeSet">
+          <ScalarProperty Name="UlkeNo" ColumnName="UlkeNo" />
+          <ScalarProperty Name="UlkeAdi" ColumnName="UlkeAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MevkiSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Takim.Mevki)">
+        <MappingFragment StoreEntitySet="MevkiSet">
+          <ScalarProperty Name="MevkiNo" ColumnName="MevkiNo" />
+          <ScalarProperty Name="MevkiAdi" ColumnName="MevkiAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KullaniciSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Takim.Kullanici)">
+        <MappingFragment StoreEntitySet="KullaniciSet">
+          <ScalarProperty Name="KullaniciNo" ColumnName="KullaniciNo" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

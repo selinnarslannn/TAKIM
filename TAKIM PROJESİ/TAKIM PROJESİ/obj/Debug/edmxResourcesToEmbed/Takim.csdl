@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Takim" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="TakimContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="OyuncuSet" EntityType="Takim.Oyuncu" />
+    <EntitySet Name="TakimSet" EntityType="Takim.Takim" />
+    <EntitySet Name="UlkeSet" EntityType="Takim.Ulke" />
+    <EntitySet Name="MevkiSet" EntityType="Takim.Mevki" />
+    <AssociationSet Name="UlkeTakim" Association="Takim.UlkeTakim">
+      <End Role="Ulke" EntitySet="UlkeSet" />
+      <End Role="Takim" EntitySet="TakimSet" />
+    </AssociationSet>
+    <AssociationSet Name="TakimOyuncu" Association="Takim.TakimOyuncu">
+      <End Role="Takim" EntitySet="TakimSet" />
+      <End Role="Oyuncu" EntitySet="OyuncuSet" />
+    </AssociationSet>
+    <AssociationSet Name="MevkiOyuncu" Association="Takim.MevkiOyuncu">
+      <End Role="Mevki" EntitySet="MevkiSet" />
+      <End Role="Oyuncu" EntitySet="OyuncuSet" />
+    </AssociationSet>
+    <EntitySet Name="KullaniciSet" EntityType="Takim.Kullanici" />
+  </EntityContainer>
+  <EntityType Name="Oyuncu">
+    <Key>
+      <PropertyRef Name="OyuncuNo" />
+    </Key>
+    <Property Name="OyuncuNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Adi" Type="String" Nullable="false" />
+    <Property Name="Soyadi" Type="String" Nullable="false" />
+    <Property Name="Yas" Type="Int32" Nullable="false" />
+    <Property Name="Mevki" Type="String" Nullable="false" />
+    <Property Name="Maas" Type="Decimal" Nullable="false" />
+    <Property Name="Ulke" Type="String" Nullable="false" />
+    <NavigationProperty Name="Takim" Relationship="Takim.TakimOyuncu" FromRole="Oyuncu" ToRole="Takim" />
+    <Property Name="TakimNo" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Mevki1" Relationship="Takim.MevkiOyuncu" FromRole="Oyuncu" ToRole="Mevki" />
+    <Property Name="MevkiNo" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Takim">
+    <Key>
+      <PropertyRef Name="TakimNo" />
+    </Key>
+    <Property Name="TakimNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TakimAdi" Type="String" Nullable="false" />
+    <NavigationProperty Name="Ulke" Relationship="Takim.UlkeTakim" FromRole="Takim" ToRole="Ulke" />
+    <Property Name="UlkeNo" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Oyuncu" Relationship="Takim.TakimOyuncu" FromRole="Takim" ToRole="Oyuncu" />
+  </EntityType>
+  <EntityType Name="Ulke">
+    <Key>
+      <PropertyRef Name="UlkeNo" />
+    </Key>
+    <Property Name="UlkeNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UlkeAdi" Type="String" Nullable="false" />
+    <NavigationProperty Name="Takim" Relationship="Takim.UlkeTakim" FromRole="Ulke" ToRole="Takim" />
+  </EntityType>
+  <EntityType Name="Mevki">
+    <Key>
+      <PropertyRef Name="MevkiNo" />
+    </Key>
+    <Property Name="MevkiNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MevkiAdi" Type="String" Nullable="false" />
+    <NavigationProperty Name="Oyuncu" Relationship="Takim.MevkiOyuncu" FromRole="Mevki" ToRole="Oyuncu" />
+  </EntityType>
+  <Association Name="UlkeTakim">
+    <End Type="Takim.Ulke" Role="Ulke" Multiplicity="1" />
+    <End Type="Takim.Takim" Role="Takim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ulke">
+        <PropertyRef Name="UlkeNo" />
+      </Principal>
+      <Dependent Role="Takim">
+        <PropertyRef Name="UlkeNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TakimOyuncu">
+    <End Type="Takim.Takim" Role="Takim" Multiplicity="1" />
+    <End Type="Takim.Oyuncu" Role="Oyuncu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Takim">
+        <PropertyRef Name="TakimNo" />
+      </Principal>
+      <Dependent Role="Oyuncu">
+        <PropertyRef Name="TakimNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MevkiOyuncu">
+    <End Type="Takim.Mevki" Role="Mevki" Multiplicity="1" />
+    <End Type="Takim.Oyuncu" Role="Oyuncu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mevki">
+        <PropertyRef Name="MevkiNo" />
+      </Principal>
+      <Dependent Role="Oyuncu">
+        <PropertyRef Name="MevkiNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Kullanici">
+    <Key>
+      <PropertyRef Name="KullaniciNo" />
+    </Key>
+    <Property Name="KullaniciNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullaniciAdi" Type="String" Nullable="false" />
+    <Property Name="Sifre" Type="String" Nullable="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,46 @@
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\bin\Debug\TAKIM PROJESİ.exe.config
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\bin\Debug\TAKIM PROJESİ.exe
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\bin\Debug\TAKIM PROJESİ.pdb
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\bin\Debug\EntityFramework.dll
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\bin\Debug\EntityFramework.xml
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM PROJESİ.csproj.AssemblyReference.cache
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.Form1.resources
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.Properties.Resources.resources
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM PROJESİ.csproj.GenerateResource.cache
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM PROJESİ.csproj.CoreCompileInputs.cache
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM PROJESİ.csproj.CopyComplete
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM PROJESİ.exe
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM PROJESİ.pdb
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.Oyuncular.resources
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.Mevkiler.resources
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.Takimlar.resources
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.Ulkeler.resources
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.Sekmelerr.resources
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.GİRİŞ_SAYFASI.resources
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.Raporlar.resources
+C:\Users\Monster\Desktop\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.İletişim.resources
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\bin\Debug\TAKIM PROJESİ.exe.config
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\bin\Debug\TAKIM PROJESİ.exe
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\bin\Debug\TAKIM PROJESİ.pdb
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\bin\Debug\EntityFramework.dll
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\bin\Debug\EntityFramework.xml
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM PROJESİ.csproj.AssemblyReference.cache
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.Form1.resources
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.GİRİŞ_SAYFASI.resources
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.Mevkiler.resources
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.Oyuncular.resources
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.Properties.Resources.resources
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.Raporlar.resources
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.Sekmelerr.resources
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.Takimlar.resources
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.Ulkeler.resources
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM_PROJESİ.İletişim.resources
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM PROJESİ.csproj.GenerateResource.cache
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM PROJESİ.csproj.CoreCompileInputs.cache
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM PROJESİ.csproj.CopyComplete
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM PROJESİ.exe
+C:\Users\Monster\Desktop\PROJELER\TAKIM PROJESİ\TAKIM PROJESİ\obj\Debug\TAKIM PROJESİ.pdb
